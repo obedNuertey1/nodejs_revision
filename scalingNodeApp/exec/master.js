@@ -1,7 +1,7 @@
 const fs = require('fs');
 const child_process = require('child_process');
 
-for(let i = 0; i < 3; i++){
+for(let i = 0; i < 8; i++){
 	let workerProcess = child_process.exec(`node support.js ${i}`, {encoding:'utf8'}, (error, stdout, stderr)=>{
 		if(error){
 			console.log(error.stack);
